@@ -1,0 +1,76 @@
+<article
+  class="bg-[#FBEAEE] border-b-4 border-r-4 border-[#FBB4C5] rounded-[70px] p-12 flex flex-col min-w-xl gap-8"
+>
+  <div class="flex items-center gap-6 justify-center">
+    <img src="/assets/Icon.webp" class="h-auto w-8" alt="" />
+    <div class="w-1 bg-[#B28692] h-10 rounded-full"></div>
+    <h1 class="text-3xl text-[#B28692] font-[MuseoModerno] font-bold">
+      Iniciar sesión
+    </h1>
+  </div>
+  <div class="flex flex-col gap-4">
+    <button
+      id="google-btn"
+      type="button"
+      class="bg-white rounded-[12px] p-3 w-full hover:bg-gray-50 transition-colors"
+    >
+      <div class="flex items-center gap-4 justify-center">
+        <span class="font-[Montserrat] font-semibold text-[#B28692] text-lg"
+          >Iniciar sesión con Google</span
+        ><img src="/icons/google.svg" class="w-auto h-6" alt="" />
+      </div>
+    </button>
+    <button
+      id="apple-btn"
+      type="button"
+      class="bg-white rounded-[12px] p-3 w-full hover:bg-gray-50 transition-colors"
+    >
+      <div class="flex items-center gap-4 justify-center">
+        <span class="font-[Montserrat] font-semibold text-[#B28692] text-lg"
+          >Iniciar sesión con Apple</span
+        ><img src="/icons/apple.svg" class="w-auto h-6" alt="" />
+      </div>
+    </button>
+  </div>
+  <div class="flex items-center gap-6 justify-center">
+    <div class="w-full bg-[#B28692] h-1 rounded-full"></div>
+  </div>
+  <form id="login-form" class="font-[MuseoModerno]">
+    <div class="flex-col flex">
+      <span class="font-semibold text-2xl text-[#B28692] mb-1"
+        >Correo electrónico:</span
+      >
+      <input
+        class="bg-white rounded-[12px] p-3 outline-none font-[Montserrat] font-medium"
+        placeholder="email@email.com"
+        type="email"
+        name="email"
+        id="email"
+        required
+      />
+    </div>
+    <div class="flex-col flex mt-6">
+      <span class="font-semibold text-2xl text-[#B28692] mb-1">Contraseña:</span
+      >
+      <input
+        class="bg-white rounded-[12px] p-3 outline-none font-[Montserrat] font-medium"
+        placeholder="••••••••"
+        type="password"
+        name="password"
+        id="password"
+        required
+      />
+    </div>
+    <div class="mt-12 justify-between flex">
+      <button
+        class="px-12 py-3 text-[#B28692] bg-white font-bold text-xl rounded-[12px] hover:bg-gray-50 transition-colors"
+        type="submit">Iniciar sesión</button
+      >
+      <button
+        class="px-12 py-3 text-white bg-[#B28692] font-bold text-xl rounded-[12px] hover:bg-[#A67A85] transition-colors"
+      >
+        <a href="/sign-up">Registrarse</a>
+      </button>
+    </div>
+  </form>
+</article>

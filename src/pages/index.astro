@@ -1,13 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import LoginForm from "../components/auth/LoginForm.astro";
 ---
 
 <Layout title="FindSong - Descubre tu canción favorita">
   <main>
-    <section>
-      <h1 class="text-4xl font-bold">
-        🎙️ FindSong - Descubre tu canción favorita
-      </h1>
+    <section class="flex justify-center items-center">
+      <LoginForm />
     </section>
   </main>
 </Layout>
