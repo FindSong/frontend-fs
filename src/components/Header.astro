@@ -1,11 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import {
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/astro/components";
 ---
 
 <header class="py-4 px-4 md:px-16">
@@ -35,30 +29,24 @@ import {
     </ul>
 
     <div class="flex items-center gap-4">
-      <SignedOut>
-        <SignInButton
-          mode="modal"
-          class="border-3 border-[#FBB4C5] text-[#FBB4C5] rounded-full px-6 py-1 hover:bg-[#FBB4C5] hover:text-white transition-colors"
+      <button
+        class="border-3 border-[#FBB4C5] text-[#FBB4C5] rounded-full px-6 py-1 hover:bg-[#FBB4C5] hover:text-white transition-colors"
+      >
+        <a
+          class="text-lg font-bold"
+          style="font-family: 'MuseoModerno', sans-serif;">Iniciar sesión</a
         >
-          <a
-            class="text-lg font-bold"
-            style="font-family: 'MuseoModerno', sans-serif;">Iniciar sesión</a
-          >
-        </SignInButton>
+      </button>
 
-        <button
-          class="bg-[#3F3F3F] text-[#FBB4C5] rounded-full px-7 py-1.5 hover:bg-[#FBB4C5] hover:text-white transition-colors"
+      <button
+        class="bg-[#3F3F3F] text-[#FBB4C5] rounded-full px-7 py-1.5 hover:bg-[#FBB4C5] hover:text-white transition-colors"
+      >
+        <a
+          href="/login"
+          class="text-lg font-bold"
+          style="font-family: 'MuseoModerno', sans-serif;">Registrarse</a
         >
-          <a
-            href="/login"
-            class="text-lg font-bold"
-            style="font-family: 'MuseoModerno', sans-serif;">Registrarse</a
-          >
-        </button>
-      </SignedOut>
-      <SignedIn>
-        <UserButton showName />
-      </SignedIn>
+      </button>
     </div>
   </nav>
 </header>
